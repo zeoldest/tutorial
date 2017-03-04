@@ -1,0 +1,29 @@
+/*Lighten backdrop 'cover' so image can be seen */
+.backdropPage.ui-page-theme-b:not(.lightBackdropPage) {
+  background-color: rgba(20,20,20,.88) !important;
+}
+
+/*Change 'Played' icon background to red for better visual separation */
+.ui-icon-check.ui-btn-icon-notext {
+  display: block;
+  position: absolute;
+  top: -1px;
+  text-align: center;
+  vertical-align: middle;
+  width: 25px;
+  height: 20px;
+  padding-top: 3px;
+  border-radius: 50%;
+  color: #fff;
+  background: rgb(153,0,0);
+}
+
+/*Remove 'Missing Trailer' icon in metadata editor, I don't use trailers*/
+img[src='css/images/editor/missingtrailer.png'] {
+  display:none;
+}
+
+/*Enable vertical scrolling on the custom css text box*/
+#txtCustomCss{
+  overflow-y:scroll;
+}
